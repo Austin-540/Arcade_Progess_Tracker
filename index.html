@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcade Progress Report</title>
@@ -29,8 +30,8 @@
 
 
     document.getElementById("percent").textContent = `We are ${percentLeft.toFixed(2)}% of the way to the deadline. There's ${(timeRemaining/86400000).toFixed(0)} days left.`;
-    document.getElementById("Framework_factory2nds").textContent = `[framework logo goes here] You should be at ${((percentLeft/100) * 120).toFixed(1)} tickets`;
-    document.getElementById("Flipper").textContent = `[flipper picture goes here] You should be at ${((percentLeft/100) * 70).toFixed(1)} tickets`;
+    document.getElementById("Framework_factory2nds").textContent = `💻 [Framework] You should be at ${((percentLeft/100) * 120).toFixed(1)} tickets`;
+    document.getElementById("Flipper").textContent = `🤖 [Flipper] You should be at ${((percentLeft/100) * 70).toFixed(1)} tickets`;
 
 </script>
 </html>
