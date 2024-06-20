@@ -29,8 +29,8 @@
 
 
     document.getElementById("percent").textContent = `We are ${percentLeft.toFixed(2)}% of the way to the deadline. There's ${(timeRemaining/86400000).toFixed(0)} days left.`;
-    document.getElementById("Framework_factory2nds").textContent = "[framework logo goes here] You should be at ___ tickets";
-    document.getElementById("Flipper").textContent = "[flipper picture goes here] You should be at ___ tickets";
+    document.getElementById("Framework_factory2nds").textContent = `[framework logo goes here] You should be at ${((percentLeft/100) * 120).toFixed(1)} tickets`;
+    document.getElementById("Flipper").textContent = `[flipper picture goes here] You should be at ${((percentLeft/100) * 70).toFixed(1)} tickets`;
 
 </script>
 </html>
