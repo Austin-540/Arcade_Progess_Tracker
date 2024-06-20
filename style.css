@@ -3,4 +3,18 @@ html {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: rgb(31, 30, 30);
+}
+
+p {
+    color: rgb(215, 215, 215);
+}
+
+h1, h2 {
+    display: inline;
+    background: linear-gradient(to right, rgb(255, 102, 0), rgb(185, 34, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
 }
