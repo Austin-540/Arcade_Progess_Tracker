@@ -9,15 +9,28 @@
     <h1>Today's Arcade Progress Report</h1>
     <p id="percent">...</p>
     <h2>Targets:</h2>
-    <p id="Framework_factory2nds">If you can see this then you should enable javascript</p>
+    <p id="Framework_factory2nds">If you can see this then you should enable javascript for this website to work. js is used to get the current date</p>
     <p id="Flipper">...</p>
 </body>
 
 
 <script>
-    document.getElementById("percent").textContent = "We are ___% of the way to the deadline.";
+    let startDate = new Date("2024-6-18");
+    let endDate = new Date("2024-8-31");
+    let totalTime = endDate - startDate;
+    let now = Date.now();
+
+    let timeRemaining = endDate - now;
+
+    let percentLeft = (1 - (timeRemaining/totalTime))*100;
+    console.log(percentLeft)
+
+
+
+
+    document.getElementById("percent").textContent = `We are ${percentLeft.toFixed(2)}% of the way to the deadline. There's ${(timeRemaining/86400000).toFixed(0)} days left.`;
     document.getElementById("Framework_factory2nds").textContent = "[framework logo goes here] You should be at ___ tickets";
-    document.getElementById("Flipper").textContent = "[flipper picture goes here] You should be at ___ tickets"
+    document.getElementById("Flipper").textContent = "[flipper picture goes here] You should be at ___ tickets";
 
 </script>
 </html>
